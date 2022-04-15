@@ -1,0 +1,191 @@
+body {
+    padding: 0 0 25px 0;
+}
+#vital-submit {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 15px;
+    float: right;
+    margin-right: 15px;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    background: #99602a;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+#vital-submit:hover{
+    background: #694316;
+}
+.form-container {
+    display: grid;
+    grid-template-areas:
+                "form-header"
+                "column-headers"
+                "form";
+}
+.form-container {
+    width: 95%;
+    margin: 15px auto 0 auto;
+    background: #EEEEEE;
+    border-radius: 10px;
+    padding: 0 0 10px 0;
+    border: solid 3px #C4C4C4;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+}
+.container-header {
+    background-image: linear-gradient(to bottom right, #99602a, #99602a);
+    width: 100%;
+    text-align: left;
+    border-radius: 10px 10px 0 0;
+    margin-top: 0;
+}
+
+/*TPR GRID*/
+.column-header-container.tpr {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 6fr 2fr;
+}
+.form-row.tpr {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 2fr 2fr 2fr 2fr;
+}
+
+/*CRIES, NONVERBAL PAIN, & RASS GRID*/
+.column-header-container.cries, .column-header-container.pain, .column-header-container.nvp, .column-header-container.rass {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    width: 80%;
+    margin: 0 auto;
+}
+.form-row.cries, .form-row.pain, .form-row.nvp, .form-row.rass {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*GROWTH GRID*/
+.column-header-container.growth {
+    display: grid;
+    grid-template-columns: 2.1fr 1fr 1fr 2fr 3fr;
+}
+.form-row.growth {
+    display: grid;
+    grid-template-columns: 2.1fr 1fr 1fr 2fr 3fr;
+}
+
+/*PAIN SCALE GRID*/
+.column-header-container.pain-scale {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+.form-row.pain-scale {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+/*INTAKE OUTPUT GRID*/
+.column-header-container.io {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 4fr 2fr;
+}
+.form-row.io {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr 2fr 2fr;
+}
+
+/*PO Intake & GLUCOSE Grid*/
+.column-header-container.po, .column-header-container.glucose {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    width: 50%;
+    margin: 0 auto;
+}
+.form-row.po, .form-row.glucose {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/*SURVEY GRID*/
+.column-header-container.survey {
+    display: grid;
+    grid-template-columns: 7fr;
+    width: 90%;
+    margin: 0 auto;
+}
+.form-row.survey{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.radio-group h4{
+    margin: auto 0;
+    font-weight: normal;
+}
+
+.radio-group input[type=radio] {
+    margin: auto 0;
+}
+
+.column-header-container h3 {
+    font-weight: bolder;
+}
+.form-row h3 {
+    margin: 10px 0;
+}
+.column-header-container {
+    margin-left: 10px;
+}
+.column-header-container * {
+    font-weight: normal;
+}
+.container-header h2 {
+    margin: 10px 0 10px 25px;
+    color: white;
+}
+input[type=text], select {
+    margin: 5px 0 5px 0;
+    border: #C4C4C4 solid 2px;
+    border-radius: 5px;
+    color: #7e7e7e;
+    overflow: hidden;
+    width: 90%;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.15);
+}
+option {
+    text-overflow: clip;
+}
+.form-container form {
+    margin: 0 10px 0 10px;
+}
+.row-header {
+    font-weight: lighter;
+    font-style: italic;
+}
+.form-container hr {
+    border:none;
+    border-top: 2px dotted #c4c4c4;
+    margin: 0;
+}
+.pain-scale-container {
+    padding: 0 10px;
+}
+.pain-scale-container {
+    margin-top: 10px;
+    text-align: center;
+}
